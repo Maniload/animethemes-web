@@ -83,6 +83,13 @@ export const INCLUDES = {
         previous: "previous",
         next: "next",
     },
+    ExternalProfile: {
+        entries: "externalentries",
+    },
+    ExternalProfileEntry: {
+        profile: "externalprofile",
+        anime: "anime",
+    },
     UserAuth: {
         permissions: "permissions",
         roles: "roles",
@@ -188,6 +195,12 @@ const ALLOWED_INCLUDES: Record<string, Array<string>> = {
         "animethemeentry.animetheme.group",
         "video.audio",
         "animethemeentry",
+    ],
+    ExternalProfile: [
+        "externalentries.anime.animethemes.group",
+        "externalentries.anime.animethemes.animethemeentries.videos",
+        "externalentries.anime.animethemes.song",
+        "externalentries.anime.images",
     ],
     UserAuth: ["permissions", "roles.permissions"],
     FeaturedTheme: [
